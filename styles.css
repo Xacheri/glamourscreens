@@ -1,0 +1,196 @@
+/* Authored by: Zachery Smith
+CIS - 130
+Oct 5 2022
+styles.css
+assignment: An Amazing Company Part 2
+"contact.html" should be graded as "schedule.html"
+*/
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+  p {
+    margin: 1rem;
+    padding: 1rem;
+  }
+ 
+ /* flex-box styling for the gallery page */
+
+ .galRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 100%;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .galColumn {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 4px;
+  }
+  
+  .galColumn img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 2px solid #1c343c;
+  }
+
+  @media screen and (max-width: 800px) {
+    .galColumn {
+      flex: 48%;
+      max-width: 48%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .galColumn {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* flex-box styling for index page 8 */
+
+  .indexRow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    width: 95%;
+  }
+
+  .indexColumn {
+    flex: 45%;
+    max-width: 45%;
+    padding: 0 4px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .indexColumn {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+
+ /*Info Card on index page */
+
+  #infoCard {
+    position: relative;
+    float: left;
+    flex: 40%;
+    margin-left: 2rem;
+  }
+
+  #infoCard p {
+    margin: 0.5rem;
+
+    padding: 1px;
+  }
+
+  #infoCard img {
+    margin-top: 0.5rem;
+  }
+
+
+  /* Info/Intro boxes */ 
+
+  #screenIntro {
+    flex: 30%;
+  }
+
+  #garageIntro {
+    flex: 30%;
+  }
+
+
+/* Navigation */ 
+
+.navbar{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c343c;
+    border-top: 2px solid black;
+}
+
+.navitem{
+    float: left;
+}
+
+.navitem a{
+    display: inline-block;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    text-decoration: none;
+    color: #a4ddfa;
+}
+
+.navitem:hover {
+  background-color: rgb(49, 80, 90);
+}
+
+
+/* Pricing Tables Styles */
+table{
+  border: 2px black solid;
+}
+
+#garagePricingTable {
+  width: 100%;
+  margin: 0.5rem;
+
+}
+
+#garagePricingBox {
+  flex: 40%;
+  margin: 0.5rem;
+}
+
+#screenPricingTable {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+#screenPricingBox {
+  flex: 40%;
+  margin: 0.5rem;
+
+}
+
+
+header {
+  background-image: url(otherImages/headerimage.jpg);
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  border: 0.2rem solid #a4ddfa;
+}
+
+form {
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  margin-top: 1rem;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  background-color: #92c3d4;
+  width: fit-content;
+}
+
+
+footer p {
+  margin:2px;
+  padding: 2px;
+}
+

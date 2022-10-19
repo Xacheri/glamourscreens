@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- Authored by: Zachery Smith
+                  CIS - 130
+                  Oct 5 2022
+                  thankyou.html
+                  assignment: An Amazing Company Part 2
+
+                  "contact.html" should be graded as "schedule.html"
+  -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+          document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Thank You!</title>
+  
+  <style>
+
+    body {
+      background-color: #a4ddfa;
+    }
+
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #000000;
+    }
+
+    #queryinfo {
+        background-color: darkslategrey;
+        color: white;
+        margin: auto;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 2rem;
+        width: fit-content;
+    
+    }
+
+  </style>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="navitem"><a href="index.html">Home</a></li>
+            <li class="navitem"><a href="gallery.html">Gallery</a></li>
+            <li class="navitem"><a href="contact.html">Contact</a></li>
+            <li class="navitem"><a href="http://www.lifestylescreens.com/Product-Catalog.html" target="_blank">Lifestyle Screens</a></li>
+        </ul>
+    </nav>
+
+    <h2>Thank you for the business! We will be in touch soon!</h2>
+
+    <div id="queryinfo">
+        <h3>The information submitted is displayed below:</h3>
+        <br>
+        <script>
+        printQuery();
+        </script>
+    </div>
+</body>
+
+</html>

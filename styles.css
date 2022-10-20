@@ -167,6 +167,9 @@ form {
   width: fit-content;
 }
 
+footer {
+  text-align: center;
+}
 
 footer p {
   margin:2px;

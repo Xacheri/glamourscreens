@@ -96,10 +96,8 @@ assignment: An Amazing Company Part 2
     overflow: hidden;
     background-color: #1c343c;
     border-top: 2px solid black;
-}
-
-.navitem{
-    float: left;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .navitem a{
@@ -194,5 +192,37 @@ footer p {
   .galColumn {
     flex: 100%;
     max-width: 100%;
+  }
+}
+
+.carousel, .slide, .carousel-inner {
+  height: 50vh;
+}
+
+.carousel-item {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+}
+
+
+.carousel-image {
+  height: inherit;
+  width: inherit;
+  background-size: cover;
+  background-position: 50%;
+}
+
+tr {
+  border-bottom: 1px solid black;
+}
+
+td {
+  padding: 0.3rem;
+}
+
+@media screen and (min-width: 780px) {
+  .carousel, .slide, .carousel-inner {
+    height: 70vh;
   }
 }
